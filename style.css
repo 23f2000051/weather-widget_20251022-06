@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+#forecast {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.forecast-day {
+    flex: 1;
+    min-width: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.forecast-day:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    #forecast {
+        flex-direction: column;
+    }
+}
