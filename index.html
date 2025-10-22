@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Information Widget">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Weather Widget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="weather-widget" class="card mx-auto" style="max-width: 600px;">
+            <div class="card-body">
+                <h5 class="card-title" id="location"></h5>
+                <div id="loading" class="text-center">Loading weather data...</div>
+                <div id="weather-details" class="d-none">
+                    <div id="current-weather" class="mb-4">
+                        <h6>Current Weather</h6>
+                        <p>Temperature: <span id="temperature"></span>°F</p>
+                        <p>Condition: <span id="condition"></span> <span id="condition-icon"></span></p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                    </div>
+                    <h6>5-Day Forecast</h6>
+                    <div id="forecast" class="d-flex justify-content-between"></div>
+                </div>
+                <div id="error-message" class="alert alert-danger d-none"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
